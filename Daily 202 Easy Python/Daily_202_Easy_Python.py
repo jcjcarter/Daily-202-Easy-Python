@@ -1,0 +1,1 @@
+print((lambda text: "".join(chr(int(text[i:i+8], 2)) for i in range(0, len(text), 8)))(open("input.txt").read().replace("\n", "")))
